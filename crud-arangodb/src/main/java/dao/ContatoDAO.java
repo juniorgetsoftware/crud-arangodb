@@ -45,7 +45,7 @@ public class ContatoDAO {
 
 	public ArrayList<Contato> contatos(ArrayList<Filtro> filtros) {
 		ArrayList<Contato> contatos = new ArrayList<>();
-		String var = "c";
+		StringBuilder var = new StringBuilder("c");
 		StringBuilder query = new StringBuilder("FOR " + var + " IN " + COLECAO);
 
 		if (!filtros.isEmpty())
